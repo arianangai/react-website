@@ -1,24 +1,44 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+//import {HashRouter, Route} from 'react-router-dom';
+import Services from './components/pages/Services';
+import Products from './components/pages/Products';
+import SignUp from './components/pages/SignUp';
+import Footer from './components/pages/Footer/Footer';
+import Home from './components/pages/Home';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>          
+      <Navbar />
+      <Home />
+      <Footer />  
+    </Router>
+
+
+    /*<HashRouter>         uses HashRouter
+      <Navbar />
+      <Route exact path='/' component={Home} />
+      <Route exact path='/services' component={Services} />
+      <Route exact path='/products' component={Products} />
+      <Route exact path='/signup' component={SignUp} />
+      <Footer />
+    </HashRouter>*/
+  
+    
+    /*<Router>            uses BrowserRouter
+      <Navbar />
+      <Routes>
+        <Route path='/' exact component={Home} />
+        <Route path='/services' component={Services} />
+        <Route path='/products' component={Products} />
+        <Route path='/sign-up' component={SignUp} />
+      </Routes>
+      <Footer />
+  </Router>*/
   );
 }
 
