@@ -1,17 +1,19 @@
 import React from 'react';
 import HeroSection from '../HeroSection';
-import {objOne, objThree, objTwo, objFour, objFive} from '../Data';
-import Pricing from '../Pricing';
+import {objOne, objThree, objTwo, objFour, objFive, pricing, form} from '../Data';
+import Pricing from './Pricing/Pricing';
+import SignupForm from './Form/Form';
 
 function Home() {
   return (
     <>
-      <HeroSection {...objOne} id='section1'/>
-      <HeroSection {...objTwo} id='section2'/>
-      <HeroSection {...objThree} id='section3'/>
-      <HeroSection {...objFour} id='section4'/>
-      <HeroSection {...objFive} id='section5'/>
-      <Pricing id='section6'/>
+      <HeroSection {...objOne}/>
+      <HeroSection {...objTwo}/>
+      <HeroSection {...objThree}/>
+      <HeroSection {...objFour}/>
+      <HeroSection {...objFive}/>
+      <Pricing {...pricing}/>
+      <SignupForm {...form}/>
 
     </>
   );

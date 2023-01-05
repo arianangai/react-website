@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from './Button';
+import { Button } from '../../Button';
 import './Pricing.css';
 import { FaFire } from 'react-icons/fa';
 import { BsXDiamondFill } from 'react-icons/bs';
@@ -7,10 +7,12 @@ import { GiCrystalize } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import { Link } from 'react-router-dom';
 
-function Pricing() {
+function Pricing({
+  sectionId
+}) {
   return (
     <IconContext.Provider value={{ color: '#fff', size: 64 }}>
-      <div className='pricing__section'>
+      <div className='pricing__section' id = {sectionId ? sectionId : ''}>
         <div className='pricing__wrapper'>
           <h1 className='pricing__heading'>Pricing</h1>
           <div className='pricing__container'>

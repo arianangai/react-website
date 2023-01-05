@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 
 
 function HeroSection ({
+  sectionId,
   lightBg,
   topLine,
   lightText,
@@ -16,9 +17,10 @@ function HeroSection ({
   alt,
   imgStart
 }) {
+  console.log('section:', sectionId);
   return(
     <> 
-      <div className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}>
+      <div className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'} id = {sectionId ? sectionId : ''}>
         <div className='container'>
         <div
             className='row home__hero-row'

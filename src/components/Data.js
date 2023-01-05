@@ -1,5 +1,6 @@
 
 export const objOne = {
+    sectionId: 'section1',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -14,6 +15,7 @@ export const objOne = {
 };
 
 export const objTwo = {
+  sectionId: 'section2',
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -27,6 +29,7 @@ export const objTwo = {
 };
   
 export const objThree = {
+    sectionId: 'section3',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -41,6 +44,7 @@ export const objThree = {
 };
   
 export const objFour = {
+    sectionId: 'section4',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -55,6 +59,7 @@ export const objFour = {
 };
   
 export const objFive = {
+    sectionId: 'section5',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -67,6 +72,15 @@ export const objFive = {
     img: 'images/svg-8.svg',
     alt: 'Vault'
 };
+
+export const pricing = {
+  sectionId: 'pricing'
+}
+
+export const form = {
+  sectionId: 'form'
+}
+
 
 
   
